@@ -1,0 +1,132 @@
+(base) francesca@YogaPro:~/Documents/HPC/A2/QS$ gcc -g quicksort.c -o qs -Wall -Wextra
+(base) francesca@YogaPro:~/Documents/HPC/A2/QS$ time ./qs
+
+real	0m0,026s
+user	0m0,022s
+sys	0m0,004s
+(base) francesca@YogaPro:~/Documents/HPC/A2/QS$ time valgrind ./qs
+==11147== Memcheck, a memory error detector
+==11147== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==11147== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==11147== Command: ./qs
+==11147== 
+==11147== 
+==11147== HEAP SUMMARY:
+==11147==     in use at exit: 0 bytes in 0 blocks
+==11147==   total heap usage: 0 allocs, 0 frees, 0 bytes allocated
+==11147== 
+==11147== All heap blocks were freed -- no leaks are possible
+==11147== 
+==11147== For counts of detected and suppressed errors, rerun with: -v
+==11147== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+
+real	0m0,768s
+user	0m0,745s
+sys	0m0,024s
+-----------------------------------
+
+valgrind --tool=callgrind --dump-instr=yes --cache-sim=yes --branch-sim=yes --collect-jumps=yes ./qs
+==11157== Callgrind, a call-graph generating cache profiler
+==11157== Copyright (C) 2002-2017, and GNU GPL'd, by Josef Weidendorfer et al.
+==11157== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==11157== Command: ./qs
+==11157== 
+--11157-- warning: L3 cache found, using its data for the LL simulation.
+==11157== For interactive control, run 'callgrind_control -h'.
+==11157== 
+==11157== Events    : Ir Dr Dw I1mr D1mr D1mw ILmr DLmr DLmw Bc Bcm Bi Bim
+==11157== Collected : 69739948 29524689 12777243 860 49481 7090 851 1157 6727 5322336 740905 100280 114
+==11157== 
+==11157== I   refs:      69,739,948
+==11157== I1  misses:           860
+==11157== LLi misses:           851
+==11157== I1  miss rate:       0.00%
+==11157== LLi miss rate:       0.00%
+==11157== 
+==11157== D   refs:      42,301,932  (29,524,689 rd + 12,777,243 wr)
+==11157== D1  misses:        56,571  (    49,481 rd +      7,090 wr)
+==11157== LLd misses:         7,884  (     1,157 rd +      6,727 wr)
+==11157== D1  miss rate:        0.1% (       0.2%   +        0.1%  )
+==11157== LLd miss rate:        0.0% (       0.0%   +        0.1%  )
+==11157== 
+==11157== LL refs:           57,431  (    50,341 rd +      7,090 wr)
+==11157== LL misses:          8,735  (     2,008 rd +      6,727 wr)
+==11157== LL miss rate:         0.0% (       0.0%   +        0.1%  )
+==11157== 
+==11157== Branches:       5,422,616  ( 5,322,336 cond +    100,280 ind)
+==11157== Mispredicts:      741,019  (   740,905 cond +        114 ind)
+==11157== Mispred rate:        13.7% (      13.9%     +        0.1%   )
+
+
+--------------------------------------
+
+
+) francesca@YogaPro:~/Documents/HPC/A2/QS$ gcc -pg quicksort.c -o qs_perf -Wall -Wextra
+(base) francesca@YogaPro:~/Documents/HPC/A2/QS$ perf stat -e cpu-cycles:u,instructions:u,cache-misses:u,branches:u,branch-misses:u ./qs_perf
+
+ Performance counter stats for './qs_perf':
+
+        86.849.577      cpu-cycles:u                                                
+       130.646.219      instructions:u            #    1,50  insn per cycle         
+             2.300      cache-misses:u                                              
+        19.809.254      branches:u                                                  
+           680.503      branch-misses:u           #    3,44% of all branches        
+
+       0,036426911 seconds time elapsed
+
+----------------------------
+perf report --call-graph graph,5,100,caller
+
+
+Samples: 34  of event 'cycles:ppp', Event count (approx.): 126845375
+  Children      Self  Command  Shared Object      Symbol
++   93,87%     5,74%  qs_perf  qs_perf            [.] quickSort
++   91,65%    40,21%  qs_perf  qs_perf            [.] partition
++   48,19%    11,01%  qs_perf  qs_perf            [.] swap
++   39,47%    10,29%  qs_perf  libc-2.27.so       [.] _mcount
++   26,62%    26,62%  qs_perf  libc-2.27.so       [.] __mcount_internal
++    9,36%     0,00%  qs_perf  qs_perf            [.] _start
++    9,36%     0,00%  qs_perf  libc-2.27.so       [.] __libc_start_main
++    9,36%     0,00%  qs_perf  qs_perf            [.] main
++    5,82%     5,82%  qs_perf  ld-2.27.so         [.] _dl_load_cache_lookup
++    5,82%     0,00%  qs_perf  ld-2.27.so         [.] _start
++    5,82%     0,00%  qs_perf  ld-2.27.so         [.] _dl_start
++    5,82%     0,00%  qs_perf  ld-2.27.so         [.] _dl_sysdep_start
++    5,82%     0,00%  qs_perf  ld-2.27.so         [.] dl_main
++    5,82%     0,00%  qs_perf  ld-2.27.so         [.] _dl_map_object_deps
++    5,82%     0,00%  qs_perf  ld-2.27.so         [.] _dl_catch_exception
++    5,82%     0,00%  qs_perf  ld-2.27.so         [.] openaux
++    5,82%     0,00%  qs_perf  ld-2.27.so         [.] _dl_map_object
+
+--------------------------------
+
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  ms/call  ms/call  name    
+ 50.16      0.01     0.01  1046089     0.00     0.00  swap
+ 50.16      0.02     0.01    66606     0.00     0.00  partition
+  0.00      0.02     0.00        1     0.00    20.06  quickSort
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this
+	   function is profiled, else blank.
+

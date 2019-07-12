@@ -1,0 +1,9 @@
+nodeperf on GNU
+Multi-threaded MPI detected
+
+The time/date of the run...  at Tue Jun 25 12:00:33 2019
+
+This driver was compiled with:
+	-DITER=4 -DLINUX -DNOACCUR -DPREC=double 
+Malloc done.  Used 1846080096 bytes
+(0 of 1): NN lda=15000 ldb= 192 ldc=15000 0 0 0 26989.855 cn07-25

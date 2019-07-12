@@ -1,0 +1,142 @@
+number of iterations = 100000000
+Strong Scalability: base size is 100000000
+Niter_per_CPU =100000000, np=1
+
+ # of trials = 100000000 , estimate of pi is 3.141608760 
+
+ # walltime on master processor : 1.96332598 
+------------------------------------------------
+Niter_per_CPU =50000000, np=2
+
+ # of trials = 100000000 , estimate of pi is 3.141402760 
+
+ # walltime on master processor : 1.00873089 
+------------------------------------------------
+Niter_per_CPU =33333333, np=3
+
+ # of trials = 99999999 , estimate of pi is 3.141248111 
+
+ # walltime on master processor : 0.69368911 
+------------------------------------------------
+Niter_per_CPU =25000000, np=4
+
+ # of trials = 100000000 , estimate of pi is 3.141421160 
+
+ # walltime on master processor : 0.53143287 
+------------------------------------------------
+Niter_per_CPU =20000000, np=5
+
+ # of trials = 100000000 , estimate of pi is 3.141485800 
+
+ # walltime on master processor : 0.41574216 
+------------------------------------------------
+Niter_per_CPU =16666666, np=6
+
+ # of trials = 99999996 , estimate of pi is 3.141540126 
+
+ # walltime on master processor : 0.34712601 
+------------------------------------------------
+Niter_per_CPU =14285714, np=7
+
+ # of trials = 99999998 , estimate of pi is 3.141512983 
+
+ # walltime on master processor : 0.30638385 
+------------------------------------------------
+Niter_per_CPU =12500000, np=8
+
+ # of trials = 100000000 , estimate of pi is 3.141582880 
+
+ # walltime on master processor : 0.27241802 
+------------------------------------------------
+Niter_per_CPU =11111111, np=9
+
+ # of trials = 99999999 , estimate of pi is 3.141530671 
+
+ # walltime on master processor : 0.24642920 
+------------------------------------------------
+Niter_per_CPU =10000000, np=10
+
+ # of trials = 100000000 , estimate of pi is 3.141469840 
+
+ # walltime on master processor : 0.22133112 
+------------------------------------------------
+Niter_per_CPU =9090909, np=11
+
+ # of trials = 99999999 , estimate of pi is 3.141496231 
+
+ # walltime on master processor : 0.20787811 
+------------------------------------------------
+Niter_per_CPU =8333333, np=12
+
+ # of trials = 99999996 , estimate of pi is 3.141486646 
+
+ # walltime on master processor : 0.19285202 
+------------------------------------------------
+Niter_per_CPU =7692307, np=13
+
+ # of trials = 99999991 , estimate of pi is 3.141493483 
+
+ # walltime on master processor : 0.17567086 
+------------------------------------------------
+Niter_per_CPU =7142857, np=14
+
+ # of trials = 99999998 , estimate of pi is 3.141512383 
+
+ # walltime on master processor : 0.16317296 
+------------------------------------------------
+Niter_per_CPU =6666666, np=15
+
+ # of trials = 99999990 , estimate of pi is 3.141407874 
+
+ # walltime on master processor : 0.15318394 
+------------------------------------------------
+Niter_per_CPU =6250000, np=16
+
+ # of trials = 100000000 , estimate of pi is 3.141336520 
+
+ # walltime on master processor : 0.14381599 
+------------------------------------------------
+Niter_per_CPU =5882352, np=17
+cn07-32.28041ipath_userinit: Mismatched user minor version (12) and driver minor version (13) while context sharing. Ensure that driver and library are from the same release.
+cn07-32.28061ipath_userinit: Mismatched user minor version (12) and driver minor version (13) while context sharing. Ensure that driver and library are from the same release.
+
+ # of trials = 99999984 , estimate of pi is 3.141377623 
+
+ # walltime on master processor : 0.13606501 
+------------------------------------------------
+Niter_per_CPU =5555555, np=18
+cn07-32.28094ipath_userinit: Mismatched user minor version (12) and driver minor version (13) while context sharing. Ensure that driver and library are from the same release.
+cn07-32.28095ipath_userinit: Mismatched user minor version (12) and driver minor version (13) while context sharing. Ensure that driver and library are from the same release.
+cn07-32.28115ipath_userinit: Mismatched user minor version (12) and driver minor version (13) while context sharing. Ensure that driver and library are from the same release.
+cn07-32.28117ipath_userinit: Mismatched user minor version (12) and driver minor version (13) while context sharing. Ensure that driver and library are from the same release.
+
+ # of trials = 99999990 , estimate of pi is 3.141411754 
+
+ # walltime on master processor : 0.12962198 
+------------------------------------------------
+Niter_per_CPU =5263157, np=19
+cn07-32.28150ipath_userinit: Mismatched user minor version (12) and driver minor version (13) while context sharing. Ensure that driver and library are from the same release.
+cn07-32.28151ipath_userinit: Mismatched user minor version (12) and driver minor version (13) while context sharing. Ensure that driver and library are from the same release.
+cn07-32.28152ipath_userinit: Mismatched user minor version (12) and driver minor version (13) while context sharing. Ensure that driver and library are from the same release.
+cn07-32.28171ipath_userinit: Mismatched user minor version (12) and driver minor version (13) while context sharing. Ensure that driver and library are from the same release.
+cn07-32.28170ipath_userinit: Mismatched user minor version (12) and driver minor version (13) while context sharing. Ensure that driver and library are from the same release.
+cn07-32.28173ipath_userinit: Mismatched user minor version (12) and driver minor version (13) while context sharing. Ensure that driver and library are from the same release.
+
+ # of trials = 99999983 , estimate of pi is 3.141437174 
+
+ # walltime on master processor : 0.15122294 
+------------------------------------------------
+Niter_per_CPU =5000000, np=20
+cn07-32.28209ipath_userinit: Mismatched user minor version (12) and driver minor version (13) while context sharing. Ensure that driver and library are from the same release.
+cn07-32.28211ipath_userinit: Mismatched user minor version (12) and driver minor version (13) while context sharing. Ensure that driver and library are from the same release.
+cn07-32.28210ipath_userinit: Mismatched user minor version (12) and driver minor version (13) while context sharing. Ensure that driver and library are from the same release.
+cn07-32.28212ipath_userinit: Mismatched user minor version (12) and driver minor version (13) while context sharing. Ensure that driver and library are from the same release.
+cn07-32.28229ipath_userinit: Mismatched user minor version (12) and driver minor version (13) while context sharing. Ensure that driver and library are from the same release.
+cn07-32.28230ipath_userinit: Mismatched user minor version (12) and driver minor version (13) while context sharing. Ensure that driver and library are from the same release.
+cn07-32.28232ipath_userinit: Mismatched user minor version (12) and driver minor version (13) while context sharing. Ensure that driver and library are from the same release.
+cn07-32.28233ipath_userinit: Mismatched user minor version (12) and driver minor version (13) while context sharing. Ensure that driver and library are from the same release.
+
+ # of trials = 100000000 , estimate of pi is 3.141420680 
+
+ # walltime on master processor : 0.11830282 
+------------------------------------------------

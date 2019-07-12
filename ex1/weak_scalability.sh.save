@@ -1,0 +1,10 @@
+module load openmpi
+
+echo "Let's test strong scalability:"
+
+for n in 10000000 100000000 1000000000; do
+        echo "number of iterations = $n" >> StrongScalabilityData.txt
+        bash ./strong_one_iter.sh ${n} >> StrongScalabilityData.txt
+done
+echo "Test finished"
+

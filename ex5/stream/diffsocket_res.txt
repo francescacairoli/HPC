@@ -1,0 +1,20 @@
+1 threads
+10060.2
+2 threads
+17283.4
+3 threads
+20130.4
+4 threads
+21133.0
+5 threads
+21121.0
+6 threads
+21586.1
+7 threads
+21702.0
+8 threads
+21324.8
+9 threads
+21439.1
+10 threads
+21760.8

@@ -1,0 +1,217 @@
+mpirun -np 2 --map-by ppr:1:node
+ benchmarks to run PingPong 
+#------------------------------------------------------------
+#    Intel (R) MPI Benchmarks 4.0, MPI-1 part    
+#------------------------------------------------------------
+# Date                  : Mon Jun 24 12:52:04 2019
+# Machine               : x86_64
+# System                : Linux
+# Release               : 2.6.32-573.12.1.el6.x86_64
+# Version               : #1 SMP Wed Dec 16 11:39:16 CET 2015
+# MPI Version           : 3.0
+# MPI Thread Environment: 
+
+# New default behavior from Version 3.2 on:
+
+# the number of iterations per message size is cut down 
+# dynamically when a certain run time (per message size sample) 
+# is expected to be exceeded. Time limit is defined by variable 
+# "SECS_PER_SAMPLE" (=> IMB_settings.h) 
+# or through the flag => -time 
+  
+
+
+# Calling sequence was: 
+
+# /u/shared/programs/x86_64/intel/impi_5.0.1/bin64/IMB-MPI1 PingPong
+
+# Minimum message length in bytes:   0
+# Maximum message length in bytes:   4194304
+#
+# MPI_Datatype                   :   MPI_BYTE 
+# MPI_Datatype for reductions    :   MPI_FLOAT
+# MPI_Op                         :   MPI_SUM  
+#
+#
+
+# List of Benchmarks to run:
+
+# PingPong
+
+#---------------------------------------------------
+# Benchmarking PingPong 
+# #processes = 2 
+#---------------------------------------------------
+       #bytes #repetitions      t[usec]   Mbytes/sec
+            0         1000         0.58         0.00
+            1         1000         0.64         1.48
+            2         1000         0.64         2.96
+            4         1000         0.64         5.93
+            8         1000         0.64        11.86
+           16         1000         0.63        24.07
+           32         1000         0.63        48.83
+           64         1000         0.66        93.12
+          128         1000         0.64       190.76
+          256         1000         0.64       382.09
+          512         1000         0.86       564.81
+         1024         1000         1.00       973.62
+         2048         1000         1.35      1446.33
+         4096         1000         1.88      2072.87
+         8192         1000         3.36      2327.19
+        16384         1000         5.74      2724.25
+        32768         1000        10.92      2861.46
+        65536          640        12.41      5035.56
+       131072          320        22.24      5619.94
+       262144          160        39.86      6272.56
+       524288           80        80.71      6195.31
+      1048576           40       164.24      6088.74
+      2097152           20       331.37      6035.51
+      4194304           10       671.10      5960.36
+
+
+# All processes entering MPI_Finalize
+
+ benchmarks to run PingPong 
+#------------------------------------------------------------
+#    Intel (R) MPI Benchmarks 4.0, MPI-1 part    
+#------------------------------------------------------------
+# Date                  : Mon Jun 24 12:52:05 2019
+# Machine               : x86_64
+# System                : Linux
+# Release               : 2.6.32-573.12.1.el6.x86_64
+# Version               : #1 SMP Wed Dec 16 11:39:16 CET 2015
+# MPI Version           : 3.0
+# MPI Thread Environment: 
+
+# New default behavior from Version 3.2 on:
+
+# the number of iterations per message size is cut down 
+# dynamically when a certain run time (per message size sample) 
+# is expected to be exceeded. Time limit is defined by variable 
+# "SECS_PER_SAMPLE" (=> IMB_settings.h) 
+# or through the flag => -time 
+  
+
+
+# Calling sequence was: 
+
+# /u/shared/programs/x86_64/intel/impi_5.0.1/bin64/IMB-MPI1 PingPong
+
+# Minimum message length in bytes:   0
+# Maximum message length in bytes:   4194304
+#
+# MPI_Datatype                   :   MPI_BYTE 
+# MPI_Datatype for reductions    :   MPI_FLOAT
+# MPI_Op                         :   MPI_SUM  
+#
+#
+
+# List of Benchmarks to run:
+
+# PingPong
+
+#---------------------------------------------------
+# Benchmarking PingPong 
+# #processes = 2 
+#---------------------------------------------------
+       #bytes #repetitions      t[usec]   Mbytes/sec
+            0         1000         0.66         0.00
+            1         1000         0.68         1.39
+            2         1000         0.69         2.77
+            4         1000         0.64         5.99
+            8         1000         0.63        12.05
+           16         1000         0.64        23.77
+           32         1000         0.56        54.44
+           64         1000         0.63        97.12
+          128         1000         0.65       187.07
+          256         1000         0.63       389.43
+          512         1000         0.85       572.47
+         1024         1000         1.00       976.63
+         2048         1000         1.32      1480.17
+         4096         1000         1.90      2052.75
+         8192         1000         3.38      2312.74
+        16384         1000         5.80      2696.07
+        32768         1000        10.99      2843.64
+        65536          640        12.47      5010.07
+       131072          320        22.09      5659.28
+       262144          160        40.03      6244.54
+       524288           80        81.10      6165.60
+      1048576           40       163.87      6102.25
+      2097152           20       327.97      6098.03
+      4194304           10       657.40      6084.54
+
+
+# All processes entering MPI_Finalize
+
+ benchmarks to run PingPong 
+#------------------------------------------------------------
+#    Intel (R) MPI Benchmarks 4.0, MPI-1 part    
+#------------------------------------------------------------
+# Date                  : Mon Jun 24 12:52:05 2019
+# Machine               : x86_64
+# System                : Linux
+# Release               : 2.6.32-573.12.1.el6.x86_64
+# Version               : #1 SMP Wed Dec 16 11:39:16 CET 2015
+# MPI Version           : 3.0
+# MPI Thread Environment: 
+
+# New default behavior from Version 3.2 on:
+
+# the number of iterations per message size is cut down 
+# dynamically when a certain run time (per message size sample) 
+# is expected to be exceeded. Time limit is defined by variable 
+# "SECS_PER_SAMPLE" (=> IMB_settings.h) 
+# or through the flag => -time 
+  
+
+
+# Calling sequence was: 
+
+# /u/shared/programs/x86_64/intel/impi_5.0.1/bin64/IMB-MPI1 PingPong
+
+# Minimum message length in bytes:   0
+# Maximum message length in bytes:   4194304
+#
+# MPI_Datatype                   :   MPI_BYTE 
+# MPI_Datatype for reductions    :   MPI_FLOAT
+# MPI_Op                         :   MPI_SUM  
+#
+#
+
+# List of Benchmarks to run:
+
+# PingPong
+
+#---------------------------------------------------
+# Benchmarking PingPong 
+# #processes = 2 
+#---------------------------------------------------
+       #bytes #repetitions      t[usec]   Mbytes/sec
+            0         1000         0.61         0.00
+            1         1000         0.70         1.36
+            2         1000         0.63         3.03
+            4         1000         0.59         6.42
+            8         1000         0.60        12.80
+           16         1000         0.58        26.35
+           32         1000         0.57        53.44
+           64         1000         0.64        95.13
+          128         1000         0.64       191.47
+          256         1000         0.64       380.25
+          512         1000         0.86       568.42
+         1024         1000         1.01       963.99
+         2048         1000         1.34      1462.47
+         4096         1000         1.88      2076.68
+         8192         1000         3.31      2359.53
+        16384         1000         5.68      2751.36
+        32768         1000        10.83      2886.32
+        65536          640        12.62      4952.90
+       131072          320        22.42      5574.47
+       262144          160        40.41      6186.29
+       524288           80        83.37      5997.00
+      1048576           40       169.32      5905.81
+      2097152           20       343.15      5828.36
+      4194304           10       702.00      5698.01
+
+
+# All processes entering MPI_Finalize
+
